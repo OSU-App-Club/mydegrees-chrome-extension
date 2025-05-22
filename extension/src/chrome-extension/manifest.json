@@ -9,8 +9,15 @@
     "description": "This is the description of your extension",
     "content_scripts": [
         {
-            "matches": ["https://mydegrees.oregonstate.edu:7447/*"],
+            "matches": [
+                "https://mydegrees.oregonstate.edu:7447/*",
+                "https://mydegrees.oregonstate.edu/*"
+            ],
             "js": ["./content.js"]
+        },
+        {
+            "matches": ["https://mydegrees.oregonstate.edu/dashboard/worksheets*"],
+            "js": ["./worksheets.js"]
         }
     ],
     "icons": {

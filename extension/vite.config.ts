@@ -25,7 +25,8 @@ export default defineConfig({
             input: {
                 popup: resolve(__dirname, 'popup.html'),
                 options: resolve(__dirname, 'options.html'),
-                content: resolve(__dirname, 'content.js'),
+                content: resolve(__dirname, '/src/chrome-extension/content-scripts/content.js'),
+                worksheets: resolve(__dirname, '/src/chrome-extension/content-scripts/worksheets.ts'),
             },
             output: {
                 entryFileNames: '[name].js',

@@ -20,5 +20,5 @@
         "noUnusedParameters": true,
         "noFallthroughCasesInSwitch": true
     },
-    "include": ["src", "src/main.tsx", "content.js"]
+    "include": ["src", "src/main.tsx", "src/chrome-extension/content-scripts/content.js", "src/chrome-extension/content-scripts/worksheets.ts"],
 }
